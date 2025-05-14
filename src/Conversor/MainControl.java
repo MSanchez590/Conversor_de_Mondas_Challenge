@@ -64,8 +64,8 @@ public class MainControl {
     }
 
     public String agregarDivisa(String divisa, String divisa2, double monto) {
-        arrayDiv[0] = divisa;
-        arrayDiv[1] = divisa2;
+        arrayDiv[0] = divisa.toUpperCase();
+        arrayDiv[1] = divisa2.toUpperCase();
         return conectar(monto);
     }
 
@@ -79,5 +79,13 @@ public class MainControl {
 
         SupportedCodes codes = con.consultarDivisas();
         return busca.verDivisas(codes);
+    }
+
+    public void verRegistros() {
+        int i = 1;
+        for (Registro registro : registros) {
+            System.out.println(i + ")" + registro.toString());
+            i++;
+        }
     }
 }

@@ -36,4 +36,9 @@ public class Registro {
     public LocalDateTime getHora() {
         return hora;
     }
+
+    @Override
+    public String toString() {
+        return cantidadAconvertir + " " + primerDivisa + " = " + conversion + " " + segundaDivisa + " - " + hora.toLocalTime();
+    }
 }

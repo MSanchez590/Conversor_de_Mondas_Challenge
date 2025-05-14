@@ -48,7 +48,7 @@ public class Main {
             }else if (opcion == 8){
                 System.out.println(control.verDivisas());
             }else if (opcion == 9){
-                System.out.println(control.registros.toString());
+                control.verRegistros();
             }else if (opcion == 0){
                 break;
             }else{
