@@ -1,3 +1,5 @@
+package Models;
+
 import com.google.gson.JsonObject;
 
 public record Conversion(String result, String documentation, String terms_of_use, int time_last_update_unix,
