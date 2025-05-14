@@ -1,6 +1,5 @@
 package Conversor;
 
-import Models.BaseCode;
 import Models.SupportedCodes;
 import Models.Conversion;
 import com.google.gson.JsonArray;
